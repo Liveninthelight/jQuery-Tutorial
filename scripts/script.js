@@ -3,15 +3,15 @@
 
 $(document).ready(function(){
 
-    $("section > h2").on("click", function(){ 
-        $(this).fadeTo(200, 0.2)
-               .fadeTo(200, 0.8)
-               .fadeTo(200, 0.2)
-               .fadeTo(200, 0.8)
-               .fadeTo(200, 0.2)
-               .fadeTo(200, 0.8);
-        $(this).fadeOut().fadeIn();
-        $(this).animate({"opacity" : "0.5"});
+     $("img[alt=map]").on("click", function(){
+         
+         $(this).hide(1000).show(1000);
+         $("section > h2").toggle(1000);
+         
+    
+         //fadeIN(), fadeOut(), fadeTo()
+         
+         //hide(), show(), toggle ()
+         
      });
- });
- 
+});
