@@ -1,26 +1,14 @@
-$(document).ready(function() {
-   alert('jQuery loaded');
-}); 
+//$("#lead-banner p");
 
-$("img[alt=quote]").css({border: "2px solid purple"});
 
-/* Console Example Below
 
->  document.getElementById("page-title");
-<     <h2 id="page-title">Kung Fu Your Net Skills!</h2>
 
-> $("#page-title");
-< [   <h2 id="page-title">Kung Fu Your Net Skilld!</h2>]
 
-> var heading = $("page-title");
-< undefined 
 
-> heading.css({position: "relative});
-< [  <h2 id="page-title">Kung Fu Your Net Skills!</h2>]
 
-> heading.animate({left: 100});
-< [  <h2 id="page-title" style="position: relative; left: < 100px;">Kung Fu Your Net Skills!</h2>]
-
-> heading[0].animate({left:20});
-< Animation {}
-> 
+//Element Selector
+$("h3").css({border: "3px solid blue"});
+// Class selector
+$(".wrapper").css({border: "3px solid red"});
+// ID selector
+$("#clients").css({border: "3px solid yellow"}); 
