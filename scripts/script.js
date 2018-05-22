@@ -1,20 +1,15 @@
 /*global $*/
 
- console.log($("#social-nav").css("position")); // checking value
- console.log($("#social-nav").css("top"));
- console.log($("#social-nav").css("top", "-200px")).css("left", "100px");
-
-var myObject = {
-    
-    "height" : "40",
-    "speed" : "100"
+ //$("header . wrapper").removeClass("wrapper");
+ //$("header > div").addClass("wrapper");
+ 
+var button = $("#lead-banner a");
+ 
+button[0].onclick = function() {
+    $("#points-of-sale").toggleClass("open");
+    return false;
 }
- 
- 
- ("#social-nav").css({
-    "top" : "-400px",
-    "left" : "150px",
-    "opacity" : "0.5",
-    "border-top" : "4px solid red"
-    
-});
+
+// removeClass() - removes a class from the matched element(s)
+// addClass() - adds a class to the matched element(s)
+// toggleClass() - toggles the class on and off on their matched element(s) 
