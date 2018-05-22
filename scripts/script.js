@@ -1,12 +1,7 @@
-// Next 
-$("#contact-methods").next().css({border: "3px solid red"});
-// Prev
-$("#social-nav.prev(").css({border: "3px solid blue"});
-// Parent
-$(".banner-title").parents().css({border: "3px solid pink"});
-// Children
-$("#social-nav").children().css({border: "3px solid green"});
-//Find
-$("#contact").find(".facebook").css({border: "3px solid purple"});
-// Closest
-$("social-nav").closest("wrapper").css({border: "3px solid orange"}):
+//Not best practice 
+$("#contact-methods").css({border: "2px solid red"}).next().css({border:"2px solid green"}).closest("section").css({border: "2px solid blue"});
+
+//Best Practice 
+$("#contact-methods").css({border: "2px solid red"})
+    .next().css({border: "2px solid green"})
+    .closest("section").css({border: "2px solid blue"}); 
