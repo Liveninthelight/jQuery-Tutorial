@@ -17,5 +17,7 @@ $("#social-nav li:lt(3)").css({border: "2px solid blue"});
 //Greater than
 $("#social-nav li:gt(2)").css({border: "2px solid blue"});
 
+//Attribute filter
 $("div[class]").css({border: "2px solid pink"});
+//Attribute with specfic value 
 $("img[alt=quote]").css({border: "2px solid purple"});
