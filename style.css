@@ -371,6 +371,7 @@ section#points-of-sale ul{
 
 blockquote {
      display: none;
+     width: 100% !important;
 }
  
 blockquote:first-of-type {
@@ -381,7 +382,28 @@ blockquote:first-of-type {
     display: none;
 }
  
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
 
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
 
 
 
