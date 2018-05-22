@@ -1,8 +1,23 @@
 /*global $*/
 
- //$("header . wrapper").removeClass("wrapper");
- //$("header > div").addClass("wrapper");
- 
+//function myFunction(){}
+    
+
+
+var mylis = $("#points-of-sale li");
+
+mylis.on("click", function(){
+    $(this).css({"background" : "pink"});
+    mylis.off("click");
+});
+
+
+// on() - binds an event to matched element(s)
+// off() - unbinds event from matched element(s)
+
+
+
+
 var button = $("#lead-banner a");
  
 button[0].onclick = function() {
@@ -10,6 +25,3 @@ button[0].onclick = function() {
     return false;
 }
 
-// removeClass() - removes a class from the matched element(s)
-// addClass() - adds a class to the matched element(s)
-// toggleClass() - toggles the class on and off on their matched element(s) 
