@@ -1,23 +1,12 @@
- // FIrst and last
-$("header nav li:first").css({border: "2px solid red"});
-$("header nav li:last").css({border: "2px solid red"});
- // First-Child and Last-child 
-$("#contact ul:first").css({border: "2px solid red"});
-$("#contact ul:last").css({border: "2px solid red"});
- //even
-$("header nav li:even").css({border: "2px solid blue"});
- //Odd
-$("header nav li:odd").css({border: "2px solid yellow"});
- 
- 
- //not
-$("section:not('#contact')").css({border: "2px solid green"});
-//Less than
-$("#social-nav li:lt(3)").css({border: "2px solid blue"});
-//Greater than
-$("#social-nav li:gt(2)").css({border: "2px solid blue"});
-
-//Attribute filter
-$("div[class]").css({border: "2px solid pink"});
-//Attribute with specfic value 
-$("img[alt=quote]").css({border: "2px solid purple"});
+// Next 
+$("#contact-methods").next().css({border: "3px solid red"});
+// Prev
+$("#social-nav.prev(").css({border: "3px solid blue"});
+// Parent
+$(".banner-title").parents().css({border: "3px solid pink"});
+// Children
+$("#social-nav").children().css({border: "3px solid green"});
+//Find
+$("#contact").find(".facebook").css({border: "3px solid purple"});
+// Closest
+$("social-nav").closest("wrapper").css({border: "3px solid orange"}):
