@@ -1,11 +1,11 @@
 /*global $*/
 
+$("#contact img").removeAttr("alt");
+$("#contact img").attr("alt", "location");
+console.log($("#contact img").attr("alt"));
 
-$(".button").empty();
-$("#points-of-sale").empty();
-$(".button").remove();
 
+// .removeAttr() removes an attribute completely
+// .attr() can read or set any attribute 
 
-// .empty() - empties the inner HTML of an element
-// .remove() - removes the element completely 
 
