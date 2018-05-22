@@ -1,15 +1,27 @@
 /*global $*/
 
-//function myFunction(){}
     
-
-
-var mylis = $("#points-of-sale li");
-
-mylis.on("click", function(){
-    $(this).css({"background" : "pink"});
-    mylis.off("click");
+$("#lead-banner").click(function(){
+    alert("You double clicked me");
 });
+
+$("#lead-banner").on("dblclick", function(){
+    alert("You double clicked me");
+});
+
+$("#lead-banner").dblclick( function(){
+    alert("You double clicked me");
+    $("#lead-banner").off("dblclick");
+});
+
+$("#lead-banner").dblclick(function(){
+    alert('you double clicked me');
+    $("#lead-banner").off("dblclick");
+});
+
+
+
+
 
 
 // on() - binds an event to matched element(s)
